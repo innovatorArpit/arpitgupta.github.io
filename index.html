@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpit Gupta</title>
+  <link rel="icon" href="./img/logo.png" type="image/icon type">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" src="/css/jquery.animatedheadline.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -25,13 +26,16 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active mx-2">
-          <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About Me<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active mx-2">
-          <a class="nav-link" href="#">Project <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#project">Project <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active mx-2">
-          <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#article">Blogs <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active mx-2">
+          <a class="nav-link" href="#experience">Experience <span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
@@ -47,18 +51,10 @@
           <img src="./img/IMG_3213-min.JPG" class="rounded-circle justify-content-center mx-5 border border-white 10px"
             alt="" />
         </div>
-        <h2>Hello</h2>
-        <h3>I am Arpit Gupta</h3>
-        <div class="selector">
-          <h1 class="ah-headline">
-            <span>My favorite food is</span>
-            <span class="ah-words-wrapper">
-              <b class="is-visible">pizza</b>
-              <b>sushi</b>
-              <b>steak</b>
-            </span>
-          </h1>
-        </div>
+        <br>
+        <h2 class="text">Hello!!</h2>
+        <h3 class="text">Glad to have you here.</h3>
+        
 
         <a href="https://drive.google.com/file/d/1Ff2IAkem4hspOpL8jwNZ5nzQuYSS7dg1/view?usp=sharing"
           download="1.png"><button type="button" class="btn btn-outline-info rounded-pill">
@@ -68,7 +64,7 @@
       </div>
     </div>
   </div>
-  <div class="about container-fluid">
+  <div class="about container-fluid" id="about">
     <div class="row d-flex justify-content-center ">
       <div class="menu-content pb-70 col-lg-8 ">
         <div class="title text-center ">
@@ -105,16 +101,16 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center about">
-      <div class="col-lg-1 col-md-1 about-left justify-content-center d-flex">
+      <div class="col-lg-1 col-md-1 col-sm-1 about-left justify-content-center d-flex">
         <a href="#" class="fa fa-facebook"></a>
       </div>
-      <div class="col-lg-1 col-md-1 about-left justify-content-center d-flex">
+      <div class="col-lg-1 col-md-1 col-sm-1 about-left justify-content-center d-flex">
         <a href="#" class="fa fa-twitter"></a>
       </div>
-      <div class="col-lg-1 col-md-1 about-left justify-content-center d-flex">
+      <div class="col-lg-1 col-md-1 col-sm-1 about-left justify-content-center d-flex">
         <a href="#" class="fa fa-linkedin"></a>
       </div>
-      <div class="col-lg-1 col-md-1 about-left justify-content-center d-flex">
+      <div class="col-lg-1 col-md-1 col-sm-1 about-left justify-content-center d-flex">
         <a href="#" class="fa fa-instagram"></a>
       </div>
       <br>
@@ -122,14 +118,18 @@
     </div>
   </div>
   <div class="container-fluid colorskill">
+    <br>
+    <br>
     <div class="row d-flex justify-content-center">
       <div class="menu-content pb-70 col-lg-8">
         <div class="title text-center">
-          <h1 class="mb-10 mt-4">SKills</h1>
+          <h1 class="mb-10 mt-4">Skills</h1>
           <p>
             <br />
           </p>
         </div>
+        <br>
+        <br>
       </div>
     </div>
     <div class="row">
@@ -192,171 +192,389 @@
       </div>
     </div>
     <br>
+    <br>
   </div>
-  <br>
-
-  <div class="container-fluid project">
+  <div class="container-fluid project" id="project">
+    <br>
+    <br>
     <div class="row d-flex justify-content-center">
-      <div class="menu-content pb-70 col-lg-8">
+      <div class="menu-content pb-70 col-lg-12">
         <div class="title text-center">
           <h1 class="mb-10 mt-4">My Projects</h1>
           <p>
             <br />
           </p>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
+        <br>
+        <br>
+
+        <div class="row ml-3">
+          <div class="col-lg-4 col-md-12 col-sm-12  ">
+            <div class="card" style="width: 26rem; height: 350px;">
               <div class="card-body">
                 <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">This is my first project which i made during my 2 semester.
-                  I have always been intrigued by the subject of this project, and wanted to explore it further.
-                  So,I developed gym management system using sql ,php (for backend) html, css, javascript ( for
-                  frontend) .
-                  i have created several tables for storing data in backend for customer ,trainers,equipments in the
-                  gym.we can perform update,add,delete operations in that.</p>
-                <br><br>
-                <a href="#" class="btn btn-primary">Read Blog</a>
-                <a href="#" class="btn btn-primary">See code</a>
+                <hr>
+                <p class="card-text">In this project i have made a simple gym management system where we and perform CRUD operations on the customer,trainer,gym equipments and manager.<br>
+                i have used html,css and javascript for frontend and php for backend. </p>
+                <br>
+                <br>
+                <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                  See Code </a>
+                <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                  style="width: 8rem; height: 32px;"> Read More</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card card-flip" style="width: 30rem; height: 350px;">
-                <div class=" card card-front ">
-                  <div class="card-body ">
-                    <h5 class="card-title">Gym Management System</h5>
-                    <hr>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content. the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                <div class=" card card-back bg-white ">
-                  <div class="card-body h-100">
-                    
-                      <p>To read about the project click on Blog link</p>
-                      <a href="#" class="btn btn-outline-info rounded-pill mt-0 pt-0">Go somewhere</a>
-                    
-                    
-                      <a href="#" class="btn btn-outline-info rounded-pill">Go somewhere</a>
-                    
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
+          <div class="col-lg-4 col-md-12 col-sm-12 ">
+            <div class="card" style="width: 26rem; height: 350px;">
               <div class="card-body">
-                <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Security Prototype using RFID sensor</h5>
+                <hr>
+                <p class="card-text">In this project Every registered user will be given RFID tag and every RFID tag have different id associated with it.we will store the information of tags in our database.
+                    ,registered user when show their tag in the sensor then they will  be allowed to enter.
+                   otherwise it will throw error.
+                     </p>
+                <br>
+                <br>
+                <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                  See Code </a>
+                <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                  style="width: 8rem; height: 32px;"> Read More</a>
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 ">
+              <div class="card" style="width: 26rem; height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title">Savior-19</h5>
+                  <hr>
+                  <p class="card-text">Saviour-19 is a online platform where we can apply for e-pass and the officers in the district will approve for the same depending on the reson mentioned in application during lockdown.<br>
+                  we have implemented a chatbot also for the basic query related to covid-19 and lockdown </p>
+                  <br>
+                  <br>
+                  <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                    See Code </a>
+                  <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                    style="width: 8rem; height: 32px;"> Read More</a>
+                </div>
+              </div>
+            </div>
         </div>
         <br>
-        <div class="row">
-          <div class="col-4">
+        <br>
+        <div class="row ml-3">
+            <div class="col-lg-4 col-md-12 col-sm-12  ">
+              <div class="card" style="width: 26rem; height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title">Intrusion Detection using Ensemble clustering algorithm</h5>
+                  <hr>
+                  <p class="card-text">In this project we have developed a ensemble clustering algorithm using two clustering algorithms named DBSACN and K-means which will be used to detect intrusion in the network.We have also used the concept of silhouette scoring for better acuracy.</p>
+                  <br>
+                  <br>
+                  <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                    See Code </a>
+                  <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                    style="width: 8rem; height: 32px;"> Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+              <div class="card" style="width: 26rem; height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title">GymKhaana</h5>
+                  <hr>
+                  <p class="card-text"> GymKhaana is a online portal for maintaining all the functionality of a particular gym.The admin will be able to add announcement on homepage,manage customers,manage trainer and package of the gym.Trainer can chat with the trainee and can suggest diet plan or can discuss for further improvement.
+                       </p>
+            
+                  <br>
+                  <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                    See Code </a>
+                  <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                    style="width: 8rem; height: 32px;"> Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+                <div class="card" style="width: 26rem; height: 350px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Coin recognition and counting application using ML models</h5>
+                    <hr>
+                    <p class="card-text">In this project we acquired images from the datasets present on the internet as well as make our own datasets by clicking pictures, do the pre-processing and feature extraction and try to recognize the value of the coin from the image. We will be using 1 rupee, 2 rupee, 5 rupee and 10 rupee coins </p>
+                    <br>
+                    <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                      See Code </a>
+                    <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                      style="width: 8rem; height: 32px;"> Read More</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <br>
+        <br>
+        <div class="row ml-3">
+            <div class="col-lg-4 col-md-12 col-sm-12  ">
+              <div class="card" style="width: 26rem; height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title">Plasm</h5>
+                  <hr>
+                  <p class="card-text">
+                      The scenario of the application is to find suitable plasma donors for the people who are suffering from the Sars-Cov2 using  parallel processing concepts which performs parallel database querying across a distributed cluster of databases,and help the peoples suffering from covid-19.
+                  </p>
+                  <br>
+                  <br>
+                  <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                    See Code </a>
+                  <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                    style="width: 8rem; height: 32px;"> Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+              <div class="card" style="width: 26rem; height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title">Genetic algorithm to enhance student performance analysis</h5>
+                  <hr>
+                  <p class="card-text"> 
+                       </p>
+            
+                  <br>
+                  <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                    See Code </a>
+                  <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                    style="width: 8rem; height: 32px;"> Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+                <div class="card" style="width: 26rem; height: 350px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Coin recognition and counting application using ML models</h5>
+                    <hr>
+                    <p class="card-text">In this project we acquired images from the datasets present on the internet as well as make our own datasets by clicking pictures, do the pre-processing and feature extraction and try to recognize the value of the coin from the image. We will be using 1 rupee, 2 rupee, 5 rupee and 10 rupee coins </p>
+                    <br>
+                    <a href="#" class="btn btn-outline-info rounded-pill fa fa-github ml-4" style="width: 8rem; height: 32px;">
+                      See Code </a>
+                    <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger ml-5"
+                      style="width: 8rem; height: 32px;"> Read More</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  </div>
+  <!--Article section-->
+  <div class="container-fluid article "id="article">
+    <br>
+    <br>
+    <div class="row d-flex justify-content-center">
+      <div class="menu-content pb-70 col-lg-10">
+        <div class="title text-center">
+
+          <h1 class="mb-10 mt-4">My Articles</h1>
+          <p>
+            <br />
+          </p>
+        </div>
+        <br>
+        <br>
+        <div class="row ">
+          <div class="col-lg-4 col-md-10 col-sm-12">
+            <div class="card" style="width: 20rem; height: 350px;">
+              <div class="card-body">
+                <h5 class="card-title">Gym Management System</h5>
+                <hr>
+                <p class="card-text">In this project i have made a simple gym management system where we and perform CRUD operations on the customer,trainer,gym equipments and manager.</p>
+                <br>
+                <br>
+                <a href="#" class="btn btn-outline-info rounded-pill fa fa-github" style="width: 8rem; height: 32px;">
+                  See Code </a>
+                <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger"
+                  style="width: 8rem; height: 32px;"> Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-12">
             <div class="card" style="width: 20rem; height: 350px;">
               <div class="card-body">
                 <h5 class="card-title">Gym Management System</h5>
                 <hr>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-outline-info rounded-pill">Go somewhere</a>
-                <a href="#" class="btn btn-outline-info rounded-pill">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
-              <div class="card-body">
-                <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  content. the card title and make up the bulk of the card's content. hellloSome quick example text to
+                  build on the card title and make up the bulk of the
                   card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                  content. </p>
+                <br>
+                <br>
+                <a href="#" class="btn btn-outline-info rounded-pill fa fa-github" style="width: 8rem; height: 32px;">
+                  See Code </a>
+                <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger"
+                  style="width: 8rem; height: 32px;"> Read More</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
-              <div class="card-body">
-                <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="col-lg-4 col-md-10 col-sm-12">
+              <div class="card" style="width: 20rem; height: 350px;">
+                <div class="card-body">
+                  <h5 class="card-title">Gym Management System</h5>
+                  <hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. the card title and make up the bulk of the card's content. hellloSome quick example text to
+                    build on the card title and make up the bulk of the
+                    card's
+                    content. </p>
+                  <br>
+                  <br>
+                  <a href="#" class="btn btn-outline-info rounded-pill fa fa-github" style="width: 8rem; height: 32px;">
+                    See Code </a>
+                  <a href="#" class=" btn btn-outline-info rounded-pill fab fa-blogger"
+                    style="width: 8rem; height: 32px;"> Read More</a>
+                </div>
               </div>
             </div>
-          </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <br>
+  <br>
+  </div>
+
+
+  <div class="container-fluid experience" id="experience">
+    <br>
+    <br>
+    <div class="row d-flex justify-content-center">
+      <div class="menu-content pb-70 col-lg-8">
+        <div class="title text-center">
+          <h1 class="mb-10 mt-4">Work Experience</h1>
+          <p>
+            <br />
+          </p>
         </div>
         <br>
-        <div class="row">
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
-              <div class="card-body">
-                <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
-              <div class="card-body">
-                <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 20rem; height: 350px;">
-              <div class="card-body">
-                <h5 class="card-title">Gym Management System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content. the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <br>
+        <ol>
+          <li>Intern at Trozorro Startup Solutions Private Ltd. </li>
+          <br>
+          <ul>
+            <li>Developed a online platform for crop bidding where farmers can put there crops for selling and the
+              highest bidder will get the crop </li><br>
+            <li>Developed overall frontend of the portal using html,css and bootstrap</li><br>
+            <li>created database for the user and farmers in MongoDb</li><br>
+            <li>Contributed in creating Authentication System</li><br>
+          </ul>
+          <br><br>
+          <li>Intern at London Strategy & Consulting Group Limited.</li><br>
+          <ul>
+            <li>Added a new module named partnership in the website where other company can put query or request for
+              partnership in specific domain(using reactjs,nodejs,mongodb)</li><br>
+            <li>Added more attributes in the main database of customer of the company </li><br>
+          </ul>
+          <br><br>
+          <li>Worked On GymKhaana Project</li><br>
+          <ul>
+            <li>GymKhaana is a online portal for Gym of Vit Chennai Campus where admin can manage all the facilities
+              such as trainer,events,payments,package etc.
+              developed in django </li>
+
+          </ul>
+          <br>
+
+        </ol>
       </div>
+    </div>
 
-      <!-- jQuery and JS bundle w/ Popper.js -->
+    <br>
+    <br>
+  </div>
 
-      <script src="js/index.js"></script>
-      <script src="js/jquery.animatedheadline.min.js"></script>
-      <script>
-        $(function () {
-          $(".selector").animatedHeadline({
-            animationType: "clip",
-          });
-        });
-      </script>
+  <div class="container-fluid certificate">
+    <br>
+    <br>
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-      </script>
+    <div class="row d-flex justify-content-center">
+      <div class="menu-content pb-70 col-lg-8">
+        <div class="title text-center">
+          <h1 class="mb-10 mt-4">Certifications</h1>
+          <p>
+            <br />
+          </p>
+        </div>
+        <br>
+        <br>
+        <ul>
+          <li>Machine Learning With Python</li>
+          <br>
+          <li>Foundational Artificial Intelligence</li><br>
+          <li>Learn Graph Using Python</li><br>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+
+  <div class="container-fluid extra">
+    <br>
+    <br>
+    <div class="row d-flex justify-content-center">
+      <div class="menu-content pb-70 col-lg-8">
+        <div class="title text-center">
+          <h1 class="mb-10 mt-4">Extra-Curricular Works</h1>
+          <p>
+            <br />
+          </p>
+          <br>
+          <br>
+        </div>
+        <ul>
+          <li>Event management head of ZERO BUGS CLUB(VIT Chennai)</li><br>
+          <li>Web Development team lead of Code Y Gen club(VIT Chennai)</li><br>
+          <li>Syllabus designer for class(1-3) at Viteach(VIT Chennai)</li><br>
+          <li>Participated in several Hackathons</li><br>
+          <li>Member of discipline Commitee of Vibrance-A cultural fest of VIT Chennai</li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--<hr style="width:60%;text-align:center;border: solid 1px black;">
+  <br>
+  <hr style="width:40%;text-align:center;border: solid 1px black;">
+  <br>
+  <hr style="width:20%;text-align:center;border: solid 1px black;">-->
+  <br>
+  <br>
+  <footer>
+<center><p>Made with <i class="fa fa-heart" style="color:red"></i> @Arpit</p></center>
+  </footer>
+
+  <!-- jQuery and JS bundle w/ Popper.js -->
+
+  <script src="js/index.js"></script>
+  <script src="js/jquery.animatedheadline.min.js"></script>
+  <script>
+    $(function () {
+      $(".selector").animatedHeadline({
+        animationType: "clip",
+      });
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+  <script src="https://kit.fontawesome.com/06de9f720a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
